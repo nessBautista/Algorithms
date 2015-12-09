@@ -1,5 +1,6 @@
 #include<iostream>
 #include<queue>
+#include "LinkedList.cpp"
 using namespace std;
 
 
@@ -83,58 +84,6 @@ bool processed [MAXV+1];
 bool discovered [MAXV+1];
 int parents[MAXV+1];
 
-typedef struct node_str{
-  int data;
-  struct node_str *next;
-}Node;
-
-typedef struct list_str{
-  Node *first;
-  Node *last;
-}List;
-
-void insertAtBack(List *l, int val){
-  Node *newPtr= (Node*)malloc(sizeof(Node));
-  newPtr->data=val;
-  newPtr->next=NULL;
-  cout<<"inserting "<<newPtr->data<<endl;
-  if(l->first==NULL){
-    l->first=l->last=newPtr;
-  }else{
-    l->last->next=newPtr;
-    l->last=newPtr;
-  }
-}
-
-void removeAtBack(List *l){
-  if(l->first!=NULL){
-    Node *temp=l->last;
-    if(l->first==l->last){
-      l->first=l->last=NULL;
-    }else{
-      Node *temp=l->first;
-      while(temp->next!=l->last){
-        temp=temp->next;
-      }
-      l->last=temp;
-      temp->next=NULL;
-    }
-  }
-}
-
-void printList(List *l){
-
-  if(l->first!=NULL){
-    Node *curr=l->first;
-    while(curr!=NULL){
-      cout<<curr->data<<"->";
-      curr=curr->next;
-    }
-    cout<<endl;
-  }
-}
-
-List *possibleParents[4+1];     //4 vertex
 
 void initialize_search(graph *g){
   for(int i=1; i<=g->nvertices;i++){
@@ -166,18 +115,6 @@ void traversal(graph *g, int start){
         q.push(y);
         discovered[y]=true;
         parents[y]=v;
-        if(possibleParents[y]==NULL){
-          List *l=(List*)malloc(sizeof(List));
-          l->first=NULL;
-          l->last=NULL;
-          possibleParents[y]=l;
-          insertAtBack(possibleParents[y],v);
-        }else{
-          cout<<"flag";
-          insertAtBack(possibleParents[y],v);
-        }
-
-
       }
       p=p->next;
     }
@@ -185,37 +122,113 @@ void traversal(graph *g, int start){
   }
 }
 
+int MAXINT = numeric_limits<int>::max();
+
+void dijkstra(graph *g, int start){
+  int i;
+  edgenode *p;
+  bool intree[MAXV+1];
+  int distance[MAXV+1];
+  int v;
+  int w;
+  int weight;
+  int dist;
+
+  for(int i=1; i<=g->nvertices; i++){
+    intree[i]=false;
+    distance[i]=MAXINT;
+    parents[i]=-1;
+  }
+  distance[start]=0;
+  v=start;
+  while(intree[v]==false){
+    intree[v]=true;
+    p=g->edges[v];
+    while(p!=NULL){
+      w=p->y;
+      weight=p->weight;
+      if(distance[w]>(distance[v]+weight)){
+        distance[w]=distance[v]+weight;
+        parents[w]=v;
+      }
+      p=p->next;
+    }
+    v=1;
+    dist=MAXINT;
+    for(i=1; i<=g->nvertices;i++){
+      if((intree[i]==false)&&(dist>distance[i]) ){
+        dist=distance[i];
+        v=i;
+      }
+    }
+  }
+}
+
+/**************
+  Path finder
+ *************
+*/
+
+void find_path_helper(int start, int end, int parents[]){
+
+  if((start==end)||(end==-1))
+    //Recursion base case
+    printf("%d->",start);
+  else{
+    //Track path
+    find_path_helper(start,parents[end],parents);
+    printf(" %d->", end);
+  }
+
+}
+
+void find_path(int start, int end, int parents[]){
+  find_path_helper(start,end, parents);
+  cout<<endl;
+}
+
+
 int main(){
-  cout<<"Im OK!"<<endl;
-  //construct test graph
-  graph *g = (graph*)malloc(sizeof(graph));
-  initialize_graph(g,false);
-  g->nvertices=4;
-  insert_edge(g,1,2,false);
-  insert_edge(g,2,4,false);
-  insert_edge(g,4,3,false);
-  insert_edge(g,3,1,false);
+  /////////////GRAPH 2
+  graph *g2=(graph*)malloc(sizeof(graph));
+  initialize_graph(g2,false);
+  g2->nvertices=10;
 
-  printGraph(g);
+  //construction of graph test 2
+  insert_edge(g2,1,2,false);
+  insert_edge(g2,2,8,false);
 
-  initialize_search(g);
-  traversal(g,1);
-  for(int i=1; i<=g->nvertices;i++){
-    cout<<"["<<i <<"] "<<parents[i]<<endl;
+  insert_edge(g2,1,3,false);
+  insert_edge(g2,3,5,false);
+  insert_edge(g2,5,7,false);
+  insert_edge(g2,7,8,false);
+
+  insert_edge(g2,1,4,false);
+  insert_edge(g2,4,6,false);
+  insert_edge(g2,6,8,false);
+
+  //print graph2
+  printGraph(g2);
+  traversal(g2,1);
+
+  int start=1;
+  int end=8;
+
+  int numberOfPaths=0;
+  edgenode *node=g2->edges[end];
+  while(node!=NULL){
+    numberOfPaths++;
+    find_path( start, node->y, parents);  
+    node=node->next;
   }
+  cout<<"numberOfpaths for end:"<<end<<" is "<<numberOfPaths<<endl;
 
-  // List *l1=(List*)malloc(sizeof(List));
-  // l1->first=NULL;
-  // l1->last=NULL;
-  // insertAtBack(l1,1);
-  // insertAtBack(l1,2);
-  // insertAtBack(l1,3);
-  //printList(l1);
+  //LinkedList *paths[10];    //10 is just an example
 
 
-  if(possibleParents[1]!=NULL){
-    cout<<possibleParents[1]->first->data;
-  }
+
+
+
 
 
 
