@@ -219,8 +219,8 @@ graph.insertEdgeWithValue(104, nodeFromValue: 4, nodeToValue: 5)
 print(graph.getEdgeList()) // Should be [(100, 1, 2), (101, 1, 3), (102, 1, 4), (103, 3, 4)]
 print(graph.getAdjacencyList()) // Should be [[], [(2, 100), (3, 101), (4, 102)], [], [(4, 103)], []]
 print(graph.getAdjacencyMatrix()) // Should be [[0, 0, 0, 0, 0], [0, 0, 100, 101, 102], [0, 0, 0, 0, 0], [0, 0, 0, 0, 103], [0, 0, 0, 0, 0]]
-print(graph.dfs(graph.nodes[0])) // Should be [1, 2, 3, 4]
-print(graph.bfs(graph.nodes[0])) // Should be [1, 2, 3, 4]
+print(graph.dfs(graph.nodes[0])) // Should be [1, 2, 3, 4, 5]
+print(graph.bfs(graph.nodes[0])) // Should be [1, 2, 3, 4, 5]
 
 
 find_path(start:1, end:5, parents: graph.parent)
