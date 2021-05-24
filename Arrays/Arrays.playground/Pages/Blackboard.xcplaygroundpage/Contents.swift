@@ -47,3 +47,52 @@ quickSort(array: &input)
 print(input)
 
 
+let n = 4//9
+let m = 2//3
+
+var quadrantLimits:[(Int, Int)] = []
+for x in stride(from: m, through: n, by: m) {
+    for y in stride(from: m, through: n, by: m) {
+        quadrantLimits.append((x - 1,y - 1))
+    }
+}
+print(quadrantLimits)
+
+var quadrants: [(Int, Int)] = [(1,1),(1,3),(3,1),(3,3)]
+func getQuadrant(coordinate: (Int, Int)) -> Int {
+    for (idx, limit) in quadrants.enumerated() {
+        if coordinate.0 <= limit.0 && coordinate.1 <= limit.1 {
+            return idx
+        }
+    }
+    return -1
+}
+
+
+getQuadrant(coordinate: (0,0))
+getQuadrant(coordinate: (0,1))
+getQuadrant(coordinate: (1,0))
+getQuadrant(coordinate: (1,1))
+
+getQuadrant(coordinate: (0,2))
+getQuadrant(coordinate: (0,3))
+getQuadrant(coordinate: (1,2))
+getQuadrant(coordinate: (1,3))
+
+getQuadrant(coordinate: (2,0))
+getQuadrant(coordinate: (2,1))
+getQuadrant(coordinate: (3,0))
+getQuadrant(coordinate: (3,1))
+
+getQuadrant(coordinate: (2,2))
+getQuadrant(coordinate: (2,3))
+getQuadrant(coordinate: (3,2))
+getQuadrant(coordinate: (3,3))
+
+
+var subgrid = Array(repeating:
+                        Array(repeating: 0, count: m),
+                     count: m)
+var subgrids = Array(repeating: subgrid, count: 4)
+
+print(subgrids)

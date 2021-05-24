@@ -5,5 +5,6 @@
         <page name='QuickSort'/>
         <page name='Blackboard'/>
         <page name='RotateImage'/>
+        <page name='Sodoku'/>
     </pages>
 </playground>
