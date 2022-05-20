@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC1685102835A40600D1A46A /* SwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC16850F2835A40500D1A46A /* SwiftUIViewController.swift */; };
+		CC1685132835A51B00D1A46A /* SearchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1685122835A51B00D1A46A /* SearchBarController.swift */; };
+		CC1685152835A54600D1A46A /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1685142835A54600D1A46A /* SearchBarView.swift */; };
+		CC1685172835A5C900D1A46A /* SearchBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1685162835A5C900D1A46A /* SearchBarViewModel.swift */; };
+		CC16851A2835B80300D1A46A /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1685192835B80300D1A46A /* Trie.swift */; };
 		CC842B152749DA2000032ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC842B142749DA2000032ACC /* AppDelegate.swift */; };
 		CC842B192749DA2000032ACC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC842B182749DA2000032ACC /* ViewController.swift */; };
 		CC842B1C2749DA2000032ACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC842B1A2749DA2000032ACC /* Main.storyboard */; };
@@ -39,6 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC16850F2835A40500D1A46A /* SwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewController.swift; sourceTree = "<group>"; };
+		CC1685122835A51B00D1A46A /* SearchBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarController.swift; sourceTree = "<group>"; };
+		CC1685142835A54600D1A46A /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		CC1685162835A5C900D1A46A /* SearchBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewModel.swift; sourceTree = "<group>"; };
+		CC1685192835B80300D1A46A /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
 		CC842B112749DA2000032ACC /* AlgorithmShowCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgorithmShowCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC842B142749DA2000032ACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC842B182749DA2000032ACC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +94,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC16850E2835A3DD00D1A46A /* searchBar */ = {
+			isa = PBXGroup;
+			children = (
+				CC1685122835A51B00D1A46A /* SearchBarController.swift */,
+				CC1685142835A54600D1A46A /* SearchBarView.swift */,
+			);
+			path = searchBar;
+			sourceTree = "<group>";
+		};
+		CC1685112835A40A00D1A46A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				CC16850F2835A40500D1A46A /* SwiftUIViewController.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		CC842B082749DA2000032ACC = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +169,8 @@
 			children = (
 				CC842B482749DB2100032ACC /* HomeViewModel.swift */,
 				CC842B4C2749DCBC00032ACC /* BinarySearchViewModel.swift */,
+				CC1685162835A5C900D1A46A /* SearchBarViewModel.swift */,
+				CC1685192835B80300D1A46A /* Trie.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -149,6 +178,8 @@
 		CC842B452749DA5800032ACC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CC1685112835A40A00D1A46A /* Utilities */,
+				CC16850E2835A3DD00D1A46A /* searchBar */,
 				CC842B462749DA7900032ACC /* HomeView.swift */,
 				CC842B4A2749DC9600032ACC /* BinarySearchController.swift */,
 				CC842B4E2749DF0200032ACC /* LabelCell.swift */,
@@ -286,13 +317,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC1685152835A54600D1A46A /* SearchBarView.swift in Sources */,
+				CC1685102835A40600D1A46A /* SwiftUIViewController.swift in Sources */,
+				CC1685132835A51B00D1A46A /* SearchBarController.swift in Sources */,
 				CC842B4B2749DC9600032ACC /* BinarySearchController.swift in Sources */,
 				CC842B192749DA2000032ACC /* ViewController.swift in Sources */,
 				CC842B4F2749DF0200032ACC /* LabelCell.swift in Sources */,
 				CC842B472749DA7900032ACC /* HomeView.swift in Sources */,
 				CC842B152749DA2000032ACC /* AppDelegate.swift in Sources */,
 				CC842B492749DB2100032ACC /* HomeViewModel.swift in Sources */,
+				CC16851A2835B80300D1A46A /* Trie.swift in Sources */,
 				CC842B4D2749DCBC00032ACC /* BinarySearchViewModel.swift in Sources */,
+				CC1685172835A5C900D1A46A /* SearchBarViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,7 +434,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -453,7 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

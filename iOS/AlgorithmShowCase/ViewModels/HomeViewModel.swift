@@ -8,11 +8,19 @@
 import Foundation
 import Combine
 
+public enum ScreenType: String, CaseIterable {
+	case binarySearch = "BinarySearch"
+	case wordSearch = "word search"
+}
+struct HomeItem {
+	let title: String
+	let screen: ScreenType
+}
 class HomeViewModel: ObservableObject {
-    @Published var items:[String]
+    @Published var items:[HomeItem]
     
     init() {
-        self.items = ["Binary Search", "QuickSort"]
+		self.items = ScreenType.allCases.map({HomeItem(title: $0.rawValue, screen: $0)})
     }
     
     
