@@ -45,6 +45,10 @@ class HomeView: UITableViewController {
 			vc = BinarySearchController()
 		case .wordSearch:
 			vc = SearchBarController()
+		case .phone1:
+			vc = PhoneViewController()
+		case .fibonacci:
+			vc = FibonacciViewController()
 		}
 		if let viewController = vc {
 			viewController.modalPresentationStyle = .fullScreen

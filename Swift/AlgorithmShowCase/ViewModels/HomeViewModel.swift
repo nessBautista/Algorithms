@@ -11,6 +11,8 @@ import Combine
 public enum ScreenType: String, CaseIterable {
 	case binarySearch = "BinarySearch"
 	case wordSearch = "word search"
+	case phone1 = "Phone Number Letter Combinations"
+	case fibonacci = "fibonacci's series"
 }
 struct HomeItem {
 	let title: String

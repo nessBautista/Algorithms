@@ -6,5 +6,6 @@
         <page name='StonesGame'/>
         <page name='KthClosestPoints'/>
         <page name='Tasks'/>
+        <page name='Twitter'/>
     </pages>
 </playground>

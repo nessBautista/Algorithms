@@ -12,6 +12,10 @@
 		CC1685152835A54600D1A46A /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1685142835A54600D1A46A /* SearchBarView.swift */; };
 		CC1685172835A5C900D1A46A /* SearchBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1685162835A5C900D1A46A /* SearchBarViewModel.swift */; };
 		CC16851A2835B80300D1A46A /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1685192835B80300D1A46A /* Trie.swift */; };
+		CC238DF5285157A900C04380 /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC238DF4285157A900C04380 /* PhoneViewController.swift */; };
+		CC238DF7285157D200C04380 /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC238DF6285157D200C04380 /* PhoneView.swift */; };
+		CC238DF92851585700C04380 /* PhoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC238DF82851585700C04380 /* PhoneViewModel.swift */; };
+		CC238DFB285167E400C04380 /* PhonePermutations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC238DFA285167E400C04380 /* PhonePermutations.swift */; };
 		CC842B152749DA2000032ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC842B142749DA2000032ACC /* AppDelegate.swift */; };
 		CC842B192749DA2000032ACC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC842B182749DA2000032ACC /* ViewController.swift */; };
 		CC842B1C2749DA2000032ACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC842B1A2749DA2000032ACC /* Main.storyboard */; };
@@ -24,6 +28,9 @@
 		CC842B4B2749DC9600032ACC /* BinarySearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC842B4A2749DC9600032ACC /* BinarySearchController.swift */; };
 		CC842B4D2749DCBC00032ACC /* BinarySearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC842B4C2749DCBC00032ACC /* BinarySearchViewModel.swift */; };
 		CC842B4F2749DF0200032ACC /* LabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC842B4E2749DF0200032ACC /* LabelCell.swift */; };
+		CC9C2D3C28525F8F004DCECE /* FibonacciView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C2D3B28525F8F004DCECE /* FibonacciView.swift */; };
+		CC9C2D3E28525FA5004DCECE /* FibonacciViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C2D3D28525FA5004DCECE /* FibonacciViewController.swift */; };
+		CC9C2D4028525FF3004DCECE /* FibonacciViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C2D3F28525FF3004DCECE /* FibonacciViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,10 @@
 		CC1685142835A54600D1A46A /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		CC1685162835A5C900D1A46A /* SearchBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewModel.swift; sourceTree = "<group>"; };
 		CC1685192835B80300D1A46A /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
+		CC238DF4285157A900C04380 /* PhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewController.swift; sourceTree = "<group>"; };
+		CC238DF6285157D200C04380 /* PhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneView.swift; sourceTree = "<group>"; };
+		CC238DF82851585700C04380 /* PhoneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewModel.swift; sourceTree = "<group>"; };
+		CC238DFA285167E400C04380 /* PhonePermutations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhonePermutations.swift; sourceTree = "<group>"; };
 		CC842B112749DA2000032ACC /* AlgorithmShowCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlgorithmShowCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC842B142749DA2000032ACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC842B182749DA2000032ACC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -67,6 +78,9 @@
 		CC842B4A2749DC9600032ACC /* BinarySearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchController.swift; sourceTree = "<group>"; };
 		CC842B4C2749DCBC00032ACC /* BinarySearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchViewModel.swift; sourceTree = "<group>"; };
 		CC842B4E2749DF0200032ACC /* LabelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelCell.swift; sourceTree = "<group>"; };
+		CC9C2D3B28525F8F004DCECE /* FibonacciView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciView.swift; sourceTree = "<group>"; };
+		CC9C2D3D28525FA5004DCECE /* FibonacciViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciViewController.swift; sourceTree = "<group>"; };
+		CC9C2D3F28525FF3004DCECE /* FibonacciViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +125,28 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		CC238DF228512B7300C04380 /* Algorithms */ = {
+			isa = PBXGroup;
+			children = (
+				CC1685192835B80300D1A46A /* Trie.swift */,
+				CC238DFA285167E400C04380 /* PhonePermutations.swift */,
+			);
+			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		CC238DF32851573D00C04380 /* Phone */ = {
+			isa = PBXGroup;
+			children = (
+				CC238DF4285157A900C04380 /* PhoneViewController.swift */,
+				CC238DF6285157D200C04380 /* PhoneView.swift */,
+			);
+			path = Phone;
+			sourceTree = "<group>";
+		};
 		CC842B082749DA2000032ACC = {
 			isa = PBXGroup;
 			children = (
+				CC238DF228512B7300C04380 /* Algorithms */,
 				CC842B452749DA5800032ACC /* Views */,
 				CC842B442749DA4400032ACC /* ViewModels */,
 				CC842B132749DA2000032ACC /* AlgorithmShowCase */,
@@ -170,7 +203,8 @@
 				CC842B482749DB2100032ACC /* HomeViewModel.swift */,
 				CC842B4C2749DCBC00032ACC /* BinarySearchViewModel.swift */,
 				CC1685162835A5C900D1A46A /* SearchBarViewModel.swift */,
-				CC1685192835B80300D1A46A /* Trie.swift */,
+				CC238DF82851585700C04380 /* PhoneViewModel.swift */,
+				CC9C2D3F28525FF3004DCECE /* FibonacciViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -178,6 +212,8 @@
 		CC842B452749DA5800032ACC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CC9C2D3A28525F79004DCECE /* Fibonacci */,
+				CC238DF32851573D00C04380 /* Phone */,
 				CC1685112835A40A00D1A46A /* Utilities */,
 				CC16850E2835A3DD00D1A46A /* searchBar */,
 				CC842B462749DA7900032ACC /* HomeView.swift */,
@@ -185,6 +221,15 @@
 				CC842B4E2749DF0200032ACC /* LabelCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CC9C2D3A28525F79004DCECE /* Fibonacci */ = {
+			isa = PBXGroup;
+			children = (
+				CC9C2D3B28525F8F004DCECE /* FibonacciView.swift */,
+				CC9C2D3D28525FA5004DCECE /* FibonacciViewController.swift */,
+			);
+			path = Fibonacci;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,16 +362,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9C2D4028525FF3004DCECE /* FibonacciViewModel.swift in Sources */,
 				CC1685152835A54600D1A46A /* SearchBarView.swift in Sources */,
 				CC1685102835A40600D1A46A /* SwiftUIViewController.swift in Sources */,
+				CC238DFB285167E400C04380 /* PhonePermutations.swift in Sources */,
 				CC1685132835A51B00D1A46A /* SearchBarController.swift in Sources */,
+				CC238DF7285157D200C04380 /* PhoneView.swift in Sources */,
+				CC9C2D3C28525F8F004DCECE /* FibonacciView.swift in Sources */,
 				CC842B4B2749DC9600032ACC /* BinarySearchController.swift in Sources */,
 				CC842B192749DA2000032ACC /* ViewController.swift in Sources */,
 				CC842B4F2749DF0200032ACC /* LabelCell.swift in Sources */,
 				CC842B472749DA7900032ACC /* HomeView.swift in Sources */,
+				CC238DF5285157A900C04380 /* PhoneViewController.swift in Sources */,
+				CC9C2D3E28525FA5004DCECE /* FibonacciViewController.swift in Sources */,
 				CC842B152749DA2000032ACC /* AppDelegate.swift in Sources */,
 				CC842B492749DB2100032ACC /* HomeViewModel.swift in Sources */,
 				CC16851A2835B80300D1A46A /* Trie.swift in Sources */,
+				CC238DF92851585700C04380 /* PhoneViewModel.swift in Sources */,
 				CC842B4D2749DCBC00032ACC /* BinarySearchViewModel.swift in Sources */,
 				CC1685172835A5C900D1A46A /* SearchBarViewModel.swift in Sources */,
 			);

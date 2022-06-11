@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SearchBarView: View {
 	@ObservedObject var viewModel: SearchBarViewModel
+	
     var body: some View {
 		NavigationView {
 			Text("Search View")
