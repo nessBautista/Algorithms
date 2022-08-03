@@ -1,26 +1,26 @@
-//: [Previous](@previous)
-
 import Foundation
-
-func subsets(_ nums: [Int]) -> [[Int]] {
+let input = [1,2,2,3]
+func subsetsWithDup(_ nums: [Int]) -> [[Int]] {
 	var output:[[Int]] = []
 	var path:[Int] = []
 	
-	func dfs(_ idx: Int){
-		if idx == nums.count {
+	func dfs(_ idx:Int){
+		if idx == nums.count{
 			output.append(path)
 			return
 		}
 		
-		let n = nums[idx]
-		path.append(n)
+		path.append(nums[idx])
 		dfs(idx + 1)
 		path.popLast()
-		dfs(idx + 1)
+		var i = idx
+		while (i + 1 < nums.count) && (nums[i] == nums[i + 1]){
+			i += 1
+		}
+		dfs(i + 1)
 	}
 	dfs(0)
 	return output
 }
-
-subsets([1,2,3])
-//: [Next](@next)
+let output = subsetsWithDup(input)
+print(output)

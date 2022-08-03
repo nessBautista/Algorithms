@@ -27,12 +27,11 @@ func kClosest(_ points: [[Int]], _ k: Int) -> [[Int]] {
 	let pointInfo = points.map({PointInfo($0)})
 	var minHeap = Heap(elements: pointInfo, priorityFunction: <)
 	
-	for _ in 0..<k{
+	for _ in 0..<k {
 		if let min = minHeap.dequeue() {
 			output.append(min.coordinates)
 		}
-	}
-	
+	}	
 	return output
 }
 print("Done")

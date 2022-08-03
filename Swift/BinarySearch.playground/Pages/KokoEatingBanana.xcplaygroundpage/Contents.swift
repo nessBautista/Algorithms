@@ -46,4 +46,33 @@ func minEatingSpeed(_ piles: [Int], _ h: Int) -> Int {
 }
 //sumTime(24, 6, piles: [30,11,23,4,20])
 minEatingSpeed([30,11,23,4,20], 6)
+
+func minEatingSpeed2(_ piles: [Int], _ h: Int) -> Int {
+	var output = 0
+	let max = piles.max() ?? 0
+	let min =  1 // should at least eat one
+	binSearch(low: min, high: max)
+	
+	func binSearch(low: Int, high: Int) {
+		if low > high {
+			return
+		}
+		let mid = (low + high) / 2
+		if verifyK(mid) {
+			output = mid
+			binSearch(low: low, high: mid - 1)
+		} else {
+			binSearch(low: mid + 1, high: high)
+		}
+	}
+	
+	func verifyK(_ k: Int) -> Bool {
+		let time = piles.reduce(0, { (total, pile) in
+			let t = (Double(pile) / Double(k)).rounded(.up)
+			return total + Int(t)
+		})
+		return time <= h
+	}
+	return output
+}
 //: [Next](@next)

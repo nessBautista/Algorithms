@@ -1,7 +1,7 @@
 import Foundation
 
 public struct Heap<Element>{
-	var elements:[Element]
+	public var elements:[Element]
 	let priorityFunction: (Element, Element) -> Bool
 	
 	public init(elements:[Element], priorityFunction: @escaping (Element, Element) -> Bool) {

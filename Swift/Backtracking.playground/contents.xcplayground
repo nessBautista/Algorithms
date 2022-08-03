@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' display-mode='raw' buildActiveScheme='true' importAppTypes='true'>
     <pages>
+        <page name='Subsets'/>
+        <page name='CombinationSum'/>
+        <page name='SubsetsII'/>
+        <page name='CombinationSumII'/>
         <page name='Backtracking'/>
         <page name='Blackboard'/>
         <page name='LetterPermutations'/>
         <page name='LetterCombinationsFromPhoneNumber'/>
-        <page name='Subsets'/>
         <page name='WordSearch'/>
         <page name='WordBreak'/>
         <page name='Decodeways'/>
         <page name='SubstringPalindrome'/>
-        <page name='CombinationSum'/>
-        <page name='CombinationSumII'/>
+        <page name='NQueens'/>
     </pages>
 </playground>

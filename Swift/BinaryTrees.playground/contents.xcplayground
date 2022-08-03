@@ -15,5 +15,6 @@
         <page name='ValidBST'/>
         <page name='BST_ KthSmallestElement'/>
         <page name='BuildTree'/>
+        <page name='Blackboard'/>
     </pages>
 </playground>

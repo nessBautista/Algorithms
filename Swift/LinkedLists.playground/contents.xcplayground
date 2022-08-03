@@ -13,5 +13,6 @@
         <page name='FindDuplicateInConstantSpace'/>
         <page name='blackboard'/>
         <page name='LRU'/>
+        <page name='MergeKSortedLists'/>
     </pages>
 </playground>

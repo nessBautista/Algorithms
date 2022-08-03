@@ -8,5 +8,9 @@
         <page name='SearchInRotatedArray'/>
         <page name='FindMinimumInSortedArray'/>
         <page name='TimeBasedKeyValueStore'/>
+        <page name='Blackboard'/>
+        <page name='FindingBoundaries'/>
+        <page name='TruckLoads'/>
+        <page name='SearchInRotatedSortedArray'/>
     </pages>
 </playground>

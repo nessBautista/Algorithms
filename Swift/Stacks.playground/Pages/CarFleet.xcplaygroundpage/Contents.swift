@@ -13,7 +13,6 @@ class Car {
 		self.velocity = velocity
 		self.target = target
 		self.travelTime = ((Double(target) - Double(position)) / Double(velocity))
-		//print(Double((target - position) / velocity))
 	}
 }
 

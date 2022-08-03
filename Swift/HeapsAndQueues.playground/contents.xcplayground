@@ -7,5 +7,6 @@
         <page name='KthClosestPoints'/>
         <page name='Tasks'/>
         <page name='Twitter'/>
+        <page name='Blackboard'/>
     </pages>
 </playground>

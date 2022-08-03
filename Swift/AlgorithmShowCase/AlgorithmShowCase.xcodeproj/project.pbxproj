@@ -7,11 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC048C01285926F600A12C3A /* PathMarkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC048C00285926F600A12C3A /* PathMarkerViewController.swift */; };
+		CC048C03285926FF00A12C3A /* PathMarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC048C02285926FF00A12C3A /* PathMarkerView.swift */; };
+		CC048C0528593A2900A12C3A /* PathMarkerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC048C0428593A2900A12C3A /* PathMarkerViewModel.swift */; };
+		CC09C1FB285CE50E00869323 /* MinStackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC09C1FA285CE50E00869323 /* MinStackViewModel.swift */; };
+		CC09C1FD285CE51700869323 /* MinStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC09C1FC285CE51700869323 /* MinStackViewController.swift */; };
+		CC09C1FF285CE51E00869323 /* MinStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC09C1FE285CE51E00869323 /* MinStackView.swift */; };
 		CC1685102835A40600D1A46A /* SwiftUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC16850F2835A40500D1A46A /* SwiftUIViewController.swift */; };
 		CC1685132835A51B00D1A46A /* SearchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1685122835A51B00D1A46A /* SearchBarController.swift */; };
 		CC1685152835A54600D1A46A /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1685142835A54600D1A46A /* SearchBarView.swift */; };
 		CC1685172835A5C900D1A46A /* SearchBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1685162835A5C900D1A46A /* SearchBarViewModel.swift */; };
 		CC16851A2835B80300D1A46A /* Trie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1685192835B80300D1A46A /* Trie.swift */; };
+		CC168B3928623388006D0840 /* MergeSortedArrayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC168B3828623388006D0840 /* MergeSortedArrayView.swift */; };
+		CC168B3B28623390006D0840 /* MergeSortedArrayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC168B3A28623390006D0840 /* MergeSortedArrayVC.swift */; };
+		CC168B3D28623396006D0840 /* MergeSortedArrayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC168B3C28623396006D0840 /* MergeSortedArrayViewModel.swift */; };
+		CC168B4028627605006D0840 /* TwitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC168B3F28627605006D0840 /* TwitterView.swift */; };
+		CC168B422862760C006D0840 /* TwitterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC168B412862760C006D0840 /* TwitterViewViewModel.swift */; };
+		CC168B4428627613006D0840 /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC168B4328627613006D0840 /* TwitterViewController.swift */; };
+		CC168B46286278DE006D0840 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC168B45286278DE006D0840 /* Heap.swift */; };
+		CC2081CD285A2F380077C435 /* NQueensViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2081CC285A2F380077C435 /* NQueensViewModel.swift */; };
+		CC2081CF285A2F420077C435 /* NQueensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2081CE285A2F420077C435 /* NQueensViewController.swift */; };
+		CC2081D1285A2F4B0077C435 /* NQueensView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2081D0285A2F4B0077C435 /* NQueensView.swift */; };
 		CC238DF5285157A900C04380 /* PhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC238DF4285157A900C04380 /* PhoneViewController.swift */; };
 		CC238DF7285157D200C04380 /* PhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC238DF6285157D200C04380 /* PhoneView.swift */; };
 		CC238DF92851585700C04380 /* PhoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC238DF82851585700C04380 /* PhoneViewModel.swift */; };
@@ -31,6 +47,9 @@
 		CC9C2D3C28525F8F004DCECE /* FibonacciView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C2D3B28525F8F004DCECE /* FibonacciView.swift */; };
 		CC9C2D3E28525FA5004DCECE /* FibonacciViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C2D3D28525FA5004DCECE /* FibonacciViewController.swift */; };
 		CC9C2D4028525FF3004DCECE /* FibonacciViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C2D3F28525FF3004DCECE /* FibonacciViewModel.swift */; };
+		CCDA61DB285BE68D00D52D0A /* CarFleetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA61DA285BE68D00D52D0A /* CarFleetView.swift */; };
+		CCDA61DD285BE69600D52D0A /* CarFleetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA61DC285BE69600D52D0A /* CarFleetViewController.swift */; };
+		CCDA61DF285BE6A000D52D0A /* CarFleetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCDA61DE285BE6A000D52D0A /* CarFleetViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,11 +70,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC048C00285926F600A12C3A /* PathMarkerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathMarkerViewController.swift; sourceTree = "<group>"; };
+		CC048C02285926FF00A12C3A /* PathMarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathMarkerView.swift; sourceTree = "<group>"; };
+		CC048C0428593A2900A12C3A /* PathMarkerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathMarkerViewModel.swift; sourceTree = "<group>"; };
+		CC09C1FA285CE50E00869323 /* MinStackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinStackViewModel.swift; sourceTree = "<group>"; };
+		CC09C1FC285CE51700869323 /* MinStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinStackViewController.swift; sourceTree = "<group>"; };
+		CC09C1FE285CE51E00869323 /* MinStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinStackView.swift; sourceTree = "<group>"; };
 		CC16850F2835A40500D1A46A /* SwiftUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewController.swift; sourceTree = "<group>"; };
 		CC1685122835A51B00D1A46A /* SearchBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarController.swift; sourceTree = "<group>"; };
 		CC1685142835A54600D1A46A /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		CC1685162835A5C900D1A46A /* SearchBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewModel.swift; sourceTree = "<group>"; };
 		CC1685192835B80300D1A46A /* Trie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trie.swift; sourceTree = "<group>"; };
+		CC168B3828623388006D0840 /* MergeSortedArrayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSortedArrayView.swift; sourceTree = "<group>"; };
+		CC168B3A28623390006D0840 /* MergeSortedArrayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSortedArrayVC.swift; sourceTree = "<group>"; };
+		CC168B3C28623396006D0840 /* MergeSortedArrayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSortedArrayViewModel.swift; sourceTree = "<group>"; };
+		CC168B3F28627605006D0840 /* TwitterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterView.swift; sourceTree = "<group>"; };
+		CC168B412862760C006D0840 /* TwitterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewViewModel.swift; sourceTree = "<group>"; };
+		CC168B4328627613006D0840 /* TwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
+		CC168B45286278DE006D0840 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		CC2081CC285A2F380077C435 /* NQueensViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NQueensViewModel.swift; sourceTree = "<group>"; };
+		CC2081CE285A2F420077C435 /* NQueensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NQueensViewController.swift; sourceTree = "<group>"; };
+		CC2081D0285A2F4B0077C435 /* NQueensView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NQueensView.swift; sourceTree = "<group>"; };
 		CC238DF4285157A900C04380 /* PhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewController.swift; sourceTree = "<group>"; };
 		CC238DF6285157D200C04380 /* PhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneView.swift; sourceTree = "<group>"; };
 		CC238DF82851585700C04380 /* PhoneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewModel.swift; sourceTree = "<group>"; };
@@ -81,6 +116,9 @@
 		CC9C2D3B28525F8F004DCECE /* FibonacciView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciView.swift; sourceTree = "<group>"; };
 		CC9C2D3D28525FA5004DCECE /* FibonacciViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciViewController.swift; sourceTree = "<group>"; };
 		CC9C2D3F28525FF3004DCECE /* FibonacciViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciViewModel.swift; sourceTree = "<group>"; };
+		CCDA61DA285BE68D00D52D0A /* CarFleetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFleetView.swift; sourceTree = "<group>"; };
+		CCDA61DC285BE69600D52D0A /* CarFleetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFleetViewController.swift; sourceTree = "<group>"; };
+		CCDA61DE285BE6A000D52D0A /* CarFleetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFleetViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,13 +146,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CC16850E2835A3DD00D1A46A /* searchBar */ = {
+		CC048BFB285925B100A12C3A /* Fibonacci */ = {
 			isa = PBXGroup;
 			children = (
+				CC9C2D3F28525FF3004DCECE /* FibonacciViewModel.swift */,
+				CC9C2D3B28525F8F004DCECE /* FibonacciView.swift */,
+				CC9C2D3D28525FA5004DCECE /* FibonacciViewController.swift */,
+			);
+			path = Fibonacci;
+			sourceTree = "<group>";
+		};
+		CC048BFC285925E900A12C3A /* PhoneNumberletterCombinations */ = {
+			isa = PBXGroup;
+			children = (
+				CC238DF4285157A900C04380 /* PhoneViewController.swift */,
+				CC238DF6285157D200C04380 /* PhoneView.swift */,
+				CC238DF82851585700C04380 /* PhoneViewModel.swift */,
+			);
+			path = PhoneNumberletterCombinations;
+			sourceTree = "<group>";
+		};
+		CC048BFD2859263100A12C3A /* SearchWithTries */ = {
+			isa = PBXGroup;
+			children = (
+				CC1685162835A5C900D1A46A /* SearchBarViewModel.swift */,
+				CC1685192835B80300D1A46A /* Trie.swift */,
+				CC238DFA285167E400C04380 /* PhonePermutations.swift */,
 				CC1685122835A51B00D1A46A /* SearchBarController.swift */,
 				CC1685142835A54600D1A46A /* SearchBarView.swift */,
 			);
-			path = searchBar;
+			path = SearchWithTries;
+			sourceTree = "<group>";
+		};
+		CC048BFE2859266C00A12C3A /* BinarySearch */ = {
+			isa = PBXGroup;
+			children = (
+				CC842B4C2749DCBC00032ACC /* BinarySearchViewModel.swift */,
+				CC842B4A2749DC9600032ACC /* BinarySearchController.swift */,
+				CC842B4E2749DF0200032ACC /* LabelCell.swift */,
+			);
+			path = BinarySearch;
+			sourceTree = "<group>";
+		};
+		CC048BFF285926E300A12C3A /* PathMarker */ = {
+			isa = PBXGroup;
+			children = (
+				CC048C00285926F600A12C3A /* PathMarkerViewController.swift */,
+				CC048C02285926FF00A12C3A /* PathMarkerView.swift */,
+				CC048C0428593A2900A12C3A /* PathMarkerViewModel.swift */,
+			);
+			path = PathMarker;
+			sourceTree = "<group>";
+		};
+		CC09C1F9285CE50400869323 /* MinStack */ = {
+			isa = PBXGroup;
+			children = (
+				CC09C1FA285CE50E00869323 /* MinStackViewModel.swift */,
+				CC09C1FC285CE51700869323 /* MinStackViewController.swift */,
+				CC09C1FE285CE51E00869323 /* MinStackView.swift */,
+			);
+			path = MinStack;
 			sourceTree = "<group>";
 		};
 		CC1685112835A40A00D1A46A /* Utilities */ = {
@@ -125,30 +216,52 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		CC238DF228512B7300C04380 /* Algorithms */ = {
+		CC168B3728623374006D0840 /* ArrayAlgorithms */ = {
 			isa = PBXGroup;
 			children = (
-				CC1685192835B80300D1A46A /* Trie.swift */,
-				CC238DFA285167E400C04380 /* PhonePermutations.swift */,
+				CC168B3828623388006D0840 /* MergeSortedArrayView.swift */,
+				CC168B3A28623390006D0840 /* MergeSortedArrayVC.swift */,
+				CC168B3C28623396006D0840 /* MergeSortedArrayViewModel.swift */,
 			);
-			path = Algorithms;
+			path = ArrayAlgorithms;
 			sourceTree = "<group>";
 		};
-		CC238DF32851573D00C04380 /* Phone */ = {
+		CC168B3E286275FA006D0840 /* Heaps */ = {
 			isa = PBXGroup;
 			children = (
-				CC238DF4285157A900C04380 /* PhoneViewController.swift */,
-				CC238DF6285157D200C04380 /* PhoneView.swift */,
+				CC168B3F28627605006D0840 /* TwitterView.swift */,
+				CC168B412862760C006D0840 /* TwitterViewViewModel.swift */,
+				CC168B4328627613006D0840 /* TwitterViewController.swift */,
+				CC168B45286278DE006D0840 /* Heap.swift */,
 			);
-			path = Phone;
+			path = Heaps;
+			sourceTree = "<group>";
+		};
+		CC2081CB285A2F2A0077C435 /* nQueens */ = {
+			isa = PBXGroup;
+			children = (
+				CC2081CC285A2F380077C435 /* NQueensViewModel.swift */,
+				CC2081CE285A2F420077C435 /* NQueensViewController.swift */,
+				CC2081D0285A2F4B0077C435 /* NQueensView.swift */,
+			);
+			path = nQueens;
 			sourceTree = "<group>";
 		};
 		CC842B082749DA2000032ACC = {
 			isa = PBXGroup;
 			children = (
-				CC238DF228512B7300C04380 /* Algorithms */,
-				CC842B452749DA5800032ACC /* Views */,
-				CC842B442749DA4400032ACC /* ViewModels */,
+				CC168B3E286275FA006D0840 /* Heaps */,
+				CC168B3728623374006D0840 /* ArrayAlgorithms */,
+				CC09C1F9285CE50400869323 /* MinStack */,
+				CCDA61D9285BE68400D52D0A /* CarFleet */,
+				CC2081CB285A2F2A0077C435 /* nQueens */,
+				CC048BFF285926E300A12C3A /* PathMarker */,
+				CC048BFE2859266C00A12C3A /* BinarySearch */,
+				CC048BFD2859263100A12C3A /* SearchWithTries */,
+				CC048BFC285925E900A12C3A /* PhoneNumberletterCombinations */,
+				CC048BFB285925B100A12C3A /* Fibonacci */,
+				CC842B452749DA5800032ACC /* Home */,
+				CC1685112835A40A00D1A46A /* Utilities */,
 				CC842B132749DA2000032ACC /* AlgorithmShowCase */,
 				CC842B2A2749DA2100032ACC /* AlgorithmShowCaseTests */,
 				CC842B352749DA2100032ACC /* AlgorithmShowCaseUITests */,
@@ -197,39 +310,23 @@
 			path = AlgorithmShowCaseUITests;
 			sourceTree = "<group>";
 		};
-		CC842B442749DA4400032ACC /* ViewModels */ = {
+		CC842B452749DA5800032ACC /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				CC842B482749DB2100032ACC /* HomeViewModel.swift */,
-				CC842B4C2749DCBC00032ACC /* BinarySearchViewModel.swift */,
-				CC1685162835A5C900D1A46A /* SearchBarViewModel.swift */,
-				CC238DF82851585700C04380 /* PhoneViewModel.swift */,
-				CC9C2D3F28525FF3004DCECE /* FibonacciViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		CC842B452749DA5800032ACC /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				CC9C2D3A28525F79004DCECE /* Fibonacci */,
-				CC238DF32851573D00C04380 /* Phone */,
-				CC1685112835A40A00D1A46A /* Utilities */,
-				CC16850E2835A3DD00D1A46A /* searchBar */,
 				CC842B462749DA7900032ACC /* HomeView.swift */,
-				CC842B4A2749DC9600032ACC /* BinarySearchController.swift */,
-				CC842B4E2749DF0200032ACC /* LabelCell.swift */,
 			);
-			path = Views;
+			path = Home;
 			sourceTree = "<group>";
 		};
-		CC9C2D3A28525F79004DCECE /* Fibonacci */ = {
+		CCDA61D9285BE68400D52D0A /* CarFleet */ = {
 			isa = PBXGroup;
 			children = (
-				CC9C2D3B28525F8F004DCECE /* FibonacciView.swift */,
-				CC9C2D3D28525FA5004DCECE /* FibonacciViewController.swift */,
+				CCDA61DA285BE68D00D52D0A /* CarFleetView.swift */,
+				CCDA61DC285BE69600D52D0A /* CarFleetViewController.swift */,
+				CCDA61DE285BE6A000D52D0A /* CarFleetViewModel.swift */,
 			);
-			path = Fibonacci;
+			path = CarFleet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,22 +462,41 @@
 				CC9C2D4028525FF3004DCECE /* FibonacciViewModel.swift in Sources */,
 				CC1685152835A54600D1A46A /* SearchBarView.swift in Sources */,
 				CC1685102835A40600D1A46A /* SwiftUIViewController.swift in Sources */,
+				CC048C01285926F600A12C3A /* PathMarkerViewController.swift in Sources */,
+				CC09C1FD285CE51700869323 /* MinStackViewController.swift in Sources */,
 				CC238DFB285167E400C04380 /* PhonePermutations.swift in Sources */,
+				CC048C0528593A2900A12C3A /* PathMarkerViewModel.swift in Sources */,
+				CC168B3B28623390006D0840 /* MergeSortedArrayVC.swift in Sources */,
+				CC168B3D28623396006D0840 /* MergeSortedArrayViewModel.swift in Sources */,
+				CC09C1FF285CE51E00869323 /* MinStackView.swift in Sources */,
+				CC048C03285926FF00A12C3A /* PathMarkerView.swift in Sources */,
 				CC1685132835A51B00D1A46A /* SearchBarController.swift in Sources */,
+				CC09C1FB285CE50E00869323 /* MinStackViewModel.swift in Sources */,
+				CCDA61DF285BE6A000D52D0A /* CarFleetViewModel.swift in Sources */,
 				CC238DF7285157D200C04380 /* PhoneView.swift in Sources */,
 				CC9C2D3C28525F8F004DCECE /* FibonacciView.swift in Sources */,
+				CCDA61DD285BE69600D52D0A /* CarFleetViewController.swift in Sources */,
 				CC842B4B2749DC9600032ACC /* BinarySearchController.swift in Sources */,
+				CC168B3928623388006D0840 /* MergeSortedArrayView.swift in Sources */,
 				CC842B192749DA2000032ACC /* ViewController.swift in Sources */,
+				CCDA61DB285BE68D00D52D0A /* CarFleetView.swift in Sources */,
 				CC842B4F2749DF0200032ACC /* LabelCell.swift in Sources */,
+				CC2081CD285A2F380077C435 /* NQueensViewModel.swift in Sources */,
+				CC168B46286278DE006D0840 /* Heap.swift in Sources */,
 				CC842B472749DA7900032ACC /* HomeView.swift in Sources */,
 				CC238DF5285157A900C04380 /* PhoneViewController.swift in Sources */,
 				CC9C2D3E28525FA5004DCECE /* FibonacciViewController.swift in Sources */,
 				CC842B152749DA2000032ACC /* AppDelegate.swift in Sources */,
+				CC168B422862760C006D0840 /* TwitterViewViewModel.swift in Sources */,
 				CC842B492749DB2100032ACC /* HomeViewModel.swift in Sources */,
+				CC2081D1285A2F4B0077C435 /* NQueensView.swift in Sources */,
 				CC16851A2835B80300D1A46A /* Trie.swift in Sources */,
+				CC2081CF285A2F420077C435 /* NQueensViewController.swift in Sources */,
+				CC168B4428627613006D0840 /* TwitterViewController.swift in Sources */,
 				CC238DF92851585700C04380 /* PhoneViewModel.swift in Sources */,
 				CC842B4D2749DCBC00032ACC /* BinarySearchViewModel.swift in Sources */,
 				CC1685172835A5C900D1A46A /* SearchBarViewModel.swift in Sources */,
+				CC168B4028627605006D0840 /* TwitterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
