@@ -1,0 +1,91 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.17.3"
+  },
+  "cells": [
+    {
+      "id": "MJUe",
+      "code_hash": "51dd7c738d9c9bcc301ddbee987ea187",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"logarithmic-functions\">Logarithmic Functions</h1>\n<h2 id=\"introduction-to-logarithmic-growth\">Introduction to Logarithmic Growth</h2>\n<span class=\"paragraph\">Logarithmic time complexity, denoted as <strong>O(log n)</strong>, represents one of the most efficient algorithm complexities. Algorithms with logarithmic complexity become only slightly slower as the input size increases dramatically.</span>\n<h3 id=\"common-examples\">Common Examples</h3>\n<ul>\n<li><strong>Binary Search</strong>: Searching in a sorted array</li>\n<li><strong>Balanced Binary Search Trees</strong>: Search, insert, delete operations</li>\n<li><strong>Heap Operations</strong>: Insert and delete in binary heaps</li>\n</ul>\n<h2 id=\"why-is-olog-n-so-efficient\">Why is O(log n) so efficient?</h2>\n<span class=\"paragraph\">The key insight is that logarithmic algorithms typically <strong>divide the problem in half</strong> at each step. This means:</span>\n<ul>\n<li>For n = 100, only ~7 operations are needed (log\u2082(100) \u2248 6.64)</li>\n<li>For n = 1,000, only ~10 operations are needed</li>\n<li>For n = 1,000,000, only ~20 operations are needed!</li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "7632b07d749dc165ee8a640b6d099c53",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"visualizing-logarithmic-growth\">Visualizing Logarithmic Growth</h2></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "231ed306331f73d1cd881a54d3ac971b",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Let's visualize how the logarithmic function grows compared to input size:</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "12ef1e990ae8a32b9c9b50e35ebc9621",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">As you can see from the graph, the logarithmic function (green line) grows very slowly. Even as the input size reaches 100, the number of operations required is less than 7.</span>\n<h2 id=\"binary-search-example\">Binary Search Example</h2>\n<span class=\"paragraph\">Here's a practical example of how binary search achieves O(log n) complexity:</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "SFPL",
+      "code_hash": "4298e385ce3e7d4e567335f036aa51bc",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"key-takeaways\">Key Takeaways</h2>\n<ol>\n<li><strong>Logarithmic growth is extremely efficient</strong> - doubling the input size only adds one more operation</li>\n<li><strong>Binary search is the classic example</strong> - by halving the search space each time, we achieve O(log n)</li>\n<li><strong>Scales incredibly well</strong> - even with millions of elements, only ~20-30 operations are needed</li>\n</ol>\n<h2 id=\"comparison-with-other-complexities\">Comparison with Other Complexities</h2>\n<span class=\"paragraph\">To understand just how efficient O(log n) is, consider searching for an element in an array of size 1,000,000:</span>\n<ul>\n<li><strong>Linear Search O(n)</strong>: Up to 1,000,000 comparisons</li>\n<li><strong>Binary Search O(log n)</strong>: Only ~20 comparisons</li>\n<li>That's a <strong>50,000x improvement</strong>!</li>\n</ul>\n<h2 id=\"practice-problems\">Practice Problems</h2>\n<span class=\"paragraph\">Try implementing these logarithmic algorithms:</span>\n<ol>\n<li><strong>Binary search</strong> in a rotated sorted array</li>\n<li><strong>Find the square root</strong> using binary search</li>\n<li><strong>Search in a 2D matrix</strong> where rows and columns are sorted</li>\n</ol></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "3a4d369cb50e49ed7896e7ea646a8f4f",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "Xref",
+      "code_hash": "31501bb52eabf4c388631d6cd7a5bdfe",
+      "outputs": [],
+      "console": []
+    }
+  ]
+}

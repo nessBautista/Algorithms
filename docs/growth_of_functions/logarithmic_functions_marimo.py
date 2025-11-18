@@ -1,0 +1,147 @@
+import marimo
+
+__generated_with = "0.9.14"
+app = marimo.App(width="medium")
+
+
+@app.cell(hide_code=True)
+def __():
+    import marimo as mo
+    return mo,
+
+
+@app.cell(hide_code=True)
+def __(mo):
+    mo.md(
+        r"""
+        # Logarithmic Functions
+
+        ## Introduction to Logarithmic Growth
+
+        Logarithmic time complexity, denoted as **O(log n)**, represents one of the most efficient algorithm complexities. Algorithms with logarithmic complexity become only slightly slower as the input size increases dramatically.
+
+        ### Common Examples
+
+        - **Binary Search**: Searching in a sorted array
+        - **Balanced Binary Search Trees**: Search, insert, delete operations
+        - **Heap Operations**: Insert and delete in binary heaps
+
+        ## Why is O(log n) so efficient?
+
+        The key insight is that logarithmic algorithms typically **divide the problem in half** at each step. This means:
+
+        - For n = 100, only ~7 operations are needed (log₂(100) ≈ 6.64)
+        - For n = 1,000, only ~10 operations are needed
+        - For n = 1,000,000, only ~20 operations are needed!
+        """
+    )
+    return
+
+
+@app.cell(hide_code=True)
+def __(mo):
+    mo.md(r"""## Visualizing Logarithmic Growth""")
+    return
+
+
+@app.cell(hide_code=True)
+def __(mo):
+    mo.md(r"""Let   visualize how the logarithmic function grows compared to input size:""")
+    return
+
+
+@app.cell
+def __():
+    from log_functions import plot_log_n
+
+    # Generate and display the plot
+    fig = plot_log_n()
+    fig
+    return fig, plot_log_n
+
+
+@app.cell(hide_code=True)
+def __(mo):
+    mo.md(
+        r"""
+        As you can see from the graph, the logarithmic function (green line) grows very slowly. Even as the input size reaches 100, the number of operations required is less than 7.
+
+        ## Binary Search Example
+
+        Here's a practical example of how binary search achieves O(log n) complexity:
+        """
+    )
+    return
+
+
+@app.cell
+def __():
+    import numpy as np
+
+    def binary_search(arr, target):
+        """
+        Binary search implementation with step counting
+        Time Complexity: O(log n)
+        """
+        left, right = 0, len(arr) - 1
+        steps = 0
+
+        while left <= right:
+            steps += 1
+            mid = (left + right) // 2
+
+            if arr[mid] == target:
+                return mid, steps
+            elif arr[mid] < target:
+                left = mid + 1
+            else:
+                right = mid - 1
+
+        return -1, steps
+
+    # Test with different array sizes
+    sizes = [10, 100, 1000, 10000]
+    print("Array Size | Max Steps | Theoretical log₂(n)")
+    print("-" * 50)
+
+    for size in sizes:
+        arr = list(range(size))
+        # Search for the last element (worst case)
+        _, steps = binary_search(arr, size - 1)
+        theoretical = np.log2(size)
+        print(f"{size:10} | {steps:9} | {theoretical:20.2f}")
+    return binary_search, np, size, sizes, steps, theoretical
+
+
+@app.cell(hide_code=True)
+def __(mo):
+    mo.md(
+        r"""
+        ## Key Takeaways
+
+        1. **Logarithmic growth is extremely efficient** - doubling the input size only adds one more operation
+        2. **Binary search is the classic example** - by halving the search space each time, we achieve O(log n)
+        3. **Scales incredibly well** - even with millions of elements, only ~20-30 operations are needed
+
+        ## Comparison with Other Complexities
+
+        To understand just how efficient O(log n) is, consider searching for an element in an array of size 1,000,000:
+
+        - **Linear Search O(n)**: Up to 1,000,000 comparisons
+        - **Binary Search O(log n)**: Only ~20 comparisons
+        - That's a **50,000x improvement**!
+
+        ## Practice Problems
+
+        Try implementing these logarithmic algorithms:
+
+        1. **Binary search** in a rotated sorted array
+        2. **Find the square root** using binary search
+        3. **Search in a 2D matrix** where rows and columns are sorted
+        """
+    )
+    return
+
+
+if __name__ == "__main__":
+    app.run()

@@ -1,0 +1,19 @@
+---
+  title: "My Interactive Document"
+  format: html
+  jupyter: python3
+---
+
+## Python Example
+
+```{python}
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+plt.plot(x, y)
+plt.title("Sine Wave")
+plt.show()
+```
