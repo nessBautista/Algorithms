@@ -70,3 +70,4 @@ local_docs/
 # Agentbox
 .agentbox/
 agentbox.json
+context
