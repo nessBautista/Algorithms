@@ -45,7 +45,7 @@ MANIFEST
 xcuserdata/
 *.xcuserstate
 .playground/*
-*.playground/playground.xcworkspace/xcuserdata/
+*.playground/playground.xcworkspace/
 *.playground/xcuserdata/
 
 # C/C++
@@ -66,3 +66,7 @@ a.out
 
 # Local documentation
 local_docs/
+
+# Agentbox
+.agentbox/
+agentbox.json
