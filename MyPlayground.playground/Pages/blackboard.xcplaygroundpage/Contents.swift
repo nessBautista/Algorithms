@@ -1,6 +1,6 @@
 import Foundation
 
 
-let set: Set<Int> = [1,2,3]
-
-set.contains(1)
+var adj:[Int:[Int]] = [:]
+adj[1, default: []].append(2)
+print(adj)
