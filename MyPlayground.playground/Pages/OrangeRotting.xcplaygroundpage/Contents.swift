@@ -49,7 +49,7 @@ func orangeRotting(grid: inout [[Int]])-> Int {
                       next.x < grid.count, next.y < grid[0].count
                 else {continue}
                 
-                //check if we can marke it
+                //check if we can mark it
                 guard grid[next.x][next.y] == 1 else {continue}
                 
                 // We have found a candidate, lets mark it

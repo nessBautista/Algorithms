@@ -42,11 +42,60 @@ MANIFEST
 /.quarto/
 
 # Swift/Xcode
+# User-specific files
 xcuserdata/
 *.xcuserstate
+*.xcuserdatad
+
+# Playgrounds
 .playground/*
 *.playground/playground.xcworkspace/
 *.playground/xcuserdata/
+
+# Xcode project files
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+*.xccheckout
+*.xcscmblueprint
+*.moved-aside
+*.hmap
+*.ipa
+
+# Build directories
+DerivedData/
+build/
+Build/
+.build/
+
+# Swift Package Manager
+.swiftpm/
+Packages/
+Package.resolved
+*.xcodeproj/project.xcworkspace/xcshareddata/swiftpm/
+
+# Dependency managers
+Carthage/
+Pods/
+.accio/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code coverage
+*.gcda
+*.gcno
+
+# Timeline
+Timeline/
 
 # C/C++
 *.out
