@@ -1,3 +1,4 @@
+//: [Previous](@previous)
 import Foundation
 class TreeNode {  // More explicit name
     var val: Int
@@ -8,34 +9,6 @@ class TreeNode {  // More explicit name
         self.val = val
         self.left = left
         self.right = right
-    }
-}
-
-func preOrder(_ node: TreeNode?) {
-    guard let node = node else {return}
-    print("->\(node.val) ")
-    preOrder(node.left)
-    preOrder(node.right)
-}
-
-func insert(_ node: TreeNode?, _ val: Int){
-    guard let node = node else { return }
-    if val < node.val {
-        guard let left = node.left else {
-            let leftNode = TreeNode(val)
-            node.left = leftNode
-            return
-        }
-        insert(left, val)
-    } else if val > node.val {
-        guard let right = node.right else {
-            let rightNode = TreeNode(val)
-            node.right = rightNode
-            return
-        }
-        insert(right, val)
-    } else {
-        print("dup")
     }
 }
 
@@ -68,13 +41,4 @@ func lca(_ node: TreeNode?, _ p: Int, _ q: Int) -> TreeNode? {
     return left ?? right
 }
 
-
-
-let root = TreeNode(10)
-insert(root, 5)
-insert(root, 15)
-insert(root, 1)
-insert(root, 6)
-insert(root, 14)
-insert(root, 16)
-print(preOrder(root))
+//: [Next](@next)

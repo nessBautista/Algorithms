@@ -16,15 +16,10 @@ class TreeNode {  // More explicit name
 
 
 
-let tree = TreeNode(10,
-    left: TreeNode(5,
-        left: TreeNode(3),
-        right: TreeNode(7)
-    ),
-    right: TreeNode(15,
-        right: TreeNode(20)
-    )
-)
+let tree = TreeNode(5,
+      left: TreeNode(3, left: TreeNode(1)),
+      right: TreeNode(8)
+  )
 
 func maxDepth(_ root: TreeNode?) -> Int {
     guard let node = root else { return 0 }
@@ -34,11 +29,19 @@ func maxDepth(_ root: TreeNode?) -> Int {
     return 1 + max(leftDepth, rightDepth)
 }
 
+func printTree(_ node: TreeNode?) {
+    guard let node = node else {return}
+    var array: [[Int]] = []
+    
+    func printHelper(level: Int){
+        
+    }
+}
+
 func invert(_ node: TreeNode?) {
     guard let node = node else { return }
     invert(node.left)
     invert(node.right)
-    if node.left == nil && node.right == nil { return }
     let buffer = node.left
     node.left = node.right
     node.right = buffer
@@ -47,7 +50,9 @@ func invert(_ node: TreeNode?) {
 }
 
 
-print(maxDepth(tree))
+print(tree)
+invert(tree)
+print(tree)
 
 
 //: [Next](@next)
